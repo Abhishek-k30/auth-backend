@@ -14,9 +14,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
   credentials: true,
-  origin: [`${process.env.BE_HOST}:3000`, `${process.env.BE_HOST}:3001`]
- }));
- 
+  origin: 'https://sensorflow-client-sma.vercel.app/'
+}));
+
 
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
