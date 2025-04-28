@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
   credentials: true,
-  origin: 'https://sensorflow-client-sma.vercel.app/'
+  origin: 'https://sensorflow-client-sma.vercel.app' || 'http://localhost:3000',
 }));
 
 
